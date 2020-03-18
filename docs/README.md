@@ -10,20 +10,20 @@ Ingrese al mundo de las ventas online, capacitese y conozca un mundo de posibili
 - Botones de Pago
 - Carros de Compra
 
-## Plugins / Modulos
+## Plataformas
 
 **Pago Seguro** te ofrece los plugins/modulos para los carros de compra de las siguientes plataformas.
 
 - Magento
-- [Odoo](intro/oddo.md)
-- [Prestashop](intro/prestashop.md)
+- [Odoo](plugins/oddo.md)
+- [Prestashop](plugins/prestashop.md)
 - Shopify
 - VTEX
-- [Woocommerce](intro/woocommerce.md)
+- [Woocommerce](plugins/woocommerce.md)
 
 Este tipo de integración permite que tu cliente pueda seleccionar los artículos que desea adquirir en tu tienda y al momento de realizar la compra sea redirigido a nuestra pasarela de pagos (**Pago Seguro**).
 
-[Plataformas >](intro/oddo.md ':id=btnnext')
+[Plugins](plugins/start.md ':id=btnnext')
 
 ![logo](img/pagoseguro.png)
 
