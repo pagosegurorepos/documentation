@@ -2,16 +2,16 @@
 	"name": "documentation",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "index.html",
+	"author": "widres8.github.io",
+	"license": "MIT",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"start": "docsify serve"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/pagosegurorepos/documentation.git"
 	},
-	"author": "widres8.github.io",
-	"license": "ISC",
 	"bugs": {
 		"url": "https://github.com/pagosegurorepos/documentation/issues"
 	},

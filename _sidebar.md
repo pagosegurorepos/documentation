@@ -2,7 +2,10 @@
 
 - [Pago Seguro](/)
 - Plugins / Modulos
-  - [Iniciar](plugins/start.md)
-  - [Odoo](plugins/odoo.md)
-  - [Prestashop](plugins/prestashop.md)
-  - [Woocommerce](plugins/woocommerce.md)
+  - [Iniciar](/plugins/start.md)
+  - Magento
+  - Odoo
+  - [Prestashop](/plugins/prestashop.md)
+  - Shopify
+  - VTEX
+  - Woocommerce
