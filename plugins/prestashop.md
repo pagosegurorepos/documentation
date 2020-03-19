@@ -24,7 +24,12 @@ Módulo para pagos en línea por medio de Pago Seguro en modo Webcheckout (se re
 ![install](../img/prestashop/install_plugin.gif)
 
 - Entrar en las configuraciones del módulo e ingresar los datos solicitados.
+
+![install](../img/prestashop/configure_plugin.gif)
+
 - Revisar si esta activo en el administrador/pago/preferencias/Restricciones por transportista y activar en todos los transportistas
+
+![install](../img/prestashop/payment_enable_plugin.png)
 
 ### Traducciones
 
