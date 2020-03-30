@@ -8,4 +8,4 @@
   - [Prestashop](/plugins/prestashop.md)
   - Shopify
   - VTEX
-  - Woocommerce
+  - [Woocommerce](/plugins/woocommerce.md)

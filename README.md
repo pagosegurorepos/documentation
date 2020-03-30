@@ -19,7 +19,7 @@ Ingrese al mundo de las ventas online, capacitese y conozca un mundo de posibili
 - [Prestashop](/plugins/prestashop.md)
 - Shopify
 - VTEX
-- Woocommerce
+- [Woocommerce](/plugins/woocommerce.md)
 
 Este tipo de integración permite que tu cliente pueda seleccionar los artículos que desea adquirir en tu tienda y al momento de realizar la compra sea redirigido a nuestra pasarela de pagos (**Pago Seguro**).
 
