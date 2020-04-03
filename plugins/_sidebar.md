@@ -1,7 +1,7 @@
 <!-- _sidebar.md -->
 
 - [Pago Seguro](/)
-- Plugins / Modulos
+- Plugins / Modulos / Integraciones
   - [Iniciar](/plugins/start.md)
   - Magento
   - Odoo
@@ -9,3 +9,6 @@
   - Shopify
   - VTEX
   - [Woocommerce](/plugins/woocommerce.md)
+- WebCheckout Conexión Directa
+  - [Introducción](/webcheckout/intro.md)
+  - [Integración](/webcheckout/integra.md)
