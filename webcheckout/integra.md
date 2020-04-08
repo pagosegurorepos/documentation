@@ -2,13 +2,13 @@
 
 ## Formulario de pago
 
-Para realizar conexiones mediante carros de compra o conexión directa (webcheckout) enviando request por POST hacia la plataforma de Pago Seguro, se debe tener el comercio creado y habilitado en la modalidad del servicio carros de compra o webcheckout, con el fin de poder obtener el user key y el Api key.
+Para realizar conexiones mediante carros de compra o conexión directa (webcheckout) enviando request por POST hacia la plataforma de Pago Seguro, se debe tener el comercio creado y habilitado en la modalidad del servicio carros de compra o webcheckout, con el fin de poder obtener el `Account ID` y el `Api key`.
 Dicha información se encuentra en el menú de herramientas, carros de compra tanto para el acceso de pruebas (sandbox) como para el acceso de producción.
 
 ![install](../img/webcheckout/menu_acces.png)
 ![install](../img/webcheckout/menu_car.png)
 
-Una vez obtenga el Account ID y Api Key se debe registrar dichos datos en la configuración del plugin de su correspondiente carro de compras o de su sistema, para algunos pluggins se debe colocar el campo url response el cual es el url de respuesta una vez una transacción es realizada, en la mayoría de los casos es una vista asociada al comercio:
+Una vez obtenga el `Account ID` y `Api Key` se debe registrar dichos datos en la configuración del plugin de su correspondiente carro de compras o de su sistema, para algunos pluggins se debe colocar el campo url response el cual es el url de respuesta una vez una transacción es realizada, en la mayoría de los casos es una vista asociada al comercio:
 
 ![install](../img/webcheckout/commerce.png)
 
@@ -82,33 +82,33 @@ Una vez obtenga el Account ID y Api Key se debe registrar dichos datos en la con
 
 ### Hash
 
-El hash es una cadena de texto la cual se debe enviar mediante método POST junto con la demás información, esta es una cadena de seguridad la cual se debe cifrar mediante sha512 dicha cadena de texto debe cumplir con el siguiente parámetro: 
+El hash es una cadena de texto la cual se debe enviar mediante método POST junto con la demás información, esta es una cadena de seguridad la cual se debe cifrar mediante sha512 dicha cadena de texto debe cumplir con el siguiente parámetro:
 
 Ejemplo
 
-hash('sha512', $key . '|' . $txnid . '|' . $amount . '|' . $productinfo . '|' . $firstname . '|' . $email . '|' . '/payment/process||||||||||' . $api_key)
+hash('sha512', $key . '|' . $txnid . '|' . $amount . '|' . $productinfo . '|' . $firstname . '|' . $email . '|' . '/payment/process||||||||||' . \$api_key)
 
 En donde se concatenan las variables generarles de la venta junto con el Api key y el Account ID:
 
-- $key: Account id del comercio, obtenido desde la plataforma de Pago Seguro Colombia
+- \$key: Account id del comercio, obtenido desde la plataforma de Pago Seguro Colombia
 
-- $txnid: Referencia de la compra 
+- \$txnid: Referencia de la compra
 
-- $amount: Monto total de la compra
+- \$amount: Monto total de la compra
 
-- $productinfo: Descripción general de la venta
+- \$productinfo: Descripción general de la venta
 
-- $firstname: Nombre y apellidos del comprador
+- \$firstname: Nombre y apellidos del comprador
 
-- $email: email  del comprador
+- \$email: email del comprador
 
-- $api_key: Api key del comercio, obtenido desde la plataforma de Pago Seguro Colombia
+- \$api_key: Api key del comercio, obtenido desde la plataforma de Pago Seguro Colombia
 
 ### Formulario de ejemplo
 
 El siguiente es un formulario de ejemplo para poder realizar un envio de parametros mediante el metodo POST de su sistema:
 
-<textarea id="w3mission" rows="10" cols="120">
+<textarea id="w3mission" rows="12" cols="102">
 <form method="post" action="https://www.sanbox-pagoseguro.com/pagosegurocanal/public/checkoutpay">
         <input type="hidden" name="key" value="16296146" />
         <input type="hidden" name="txnid"  value="SO0001" />
