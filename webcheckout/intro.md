@@ -41,4 +41,3 @@ La información enviada hacia el canal de pagos de nuestra pasarela es realizada
 - Para realizar una integración mediante este servicio es necesario que cuente con personal de desarrollo el cual tenga conocimientos en lenguajes de programación, tales como:
   `PHP, Java, Python , .NET, Ruby, Javascript, etc.`
 
-- Tenga en cuenta que en su plataforma debe guardar la referencia de compra enviada hacia el canal de pagos de Pago Seguro, ya que es la única manera de hacer cruce de información entre la transacción realizada y la compra realizada desde su sistema.
