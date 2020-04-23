@@ -38,6 +38,7 @@ La información enviada hacia el canal de pagos de nuestra pasarela es realizada
 
 # Observaciones
 
-- Para realizar una integración mediante este servicio es necesario que cuente con personal de desarrollo el cual tenga conocimientos en lenguajes de programación, tales como:
+- Para realizar una integración mediante este servicio es necesario que cuente con personal de desarrollo el cual tenga conocimientos en lenguajes de programación,     tales como:
+
   `PHP, Java, Python , .NET, Ruby, Javascript, etc.`
 
