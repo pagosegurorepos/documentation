@@ -1,14 +1,17 @@
 <!-- _sidebar.md -->
-
 - [Pago Seguro](/)
 - Plugins / Modulos / Integraciones
   - [Iniciar](/plugins/start.md)
   - Magento
   - Odoo
-  - [Prestashop](/plugins/prestashop.md)
+  - [Plugin Prestashop](/plugins/prestashop.md)
   - Shopify
   - VTEX
-  - [Woocommerce](/plugins/woocommerce.md)
+  - [Plugin Woocommerce](/plugins/woocommerce.md)
 - WebCheckout Conexión Directa
-  - [Introducción](/webcheckout/intro.md)
-  - [Integración](/webcheckout/integra.md)
+  - [WebCheckout Introducción](/webcheckout/intro.md)
+  - [WebCheckout Integración](/webcheckout/integra.md)
+- Integración API
+  - [API Autenticación](/api/autentication.md)
+  - [API Integración Checkout](/api/integrationCheckout.md)
+  - [API Integración Tokenización](/api/integrationTokenization.md)

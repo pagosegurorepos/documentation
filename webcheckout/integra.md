@@ -8,7 +8,7 @@ Dicha información se encuentra en el menú de herramientas, carros de compra ta
 ![install](../img/webcheckout/menu_acces.png)
 ![install](../img/webcheckout/menu_car.png)
 
-Una vez obtenga el `Account ID` y `Api Key` se debe registrar dichos datos en la configuración del plugin de su correspondiente carro de compras o de su sistema, para algunos pluggins se debe colocar el campo url response el cual es el url de respuesta una vez una transacción es realizada, en la mayoría de los casos es una vista asociada al comercio:
+Una vez obtenga el `Account ID` y `Api Key` se debe registrar dichos datos en la configuración del plugin de su correspondiente carro de compras o de su sistema, para algunos plugins se debe colocar el campo url response el cual es el url de respuesta una vez una transacción es realizada, en la mayoría de los casos es una vista asociada al comercio:
 
 ![install](../img/webcheckout/commerce.png)
 

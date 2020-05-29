@@ -1,6 +1,6 @@
 # Plugins / Modulos
 
-[![magento](../img/platforms/magento.png ':size=100')](/plugins/magento.md)
+?> [![magento](../img/platforms/magento.png ':size=100')](/plugins/magento.md)
 [![odoo](../img/platforms/odoo.png ':size=150')](/plugins/odoo.md)
 [![prestashop](../img/platforms/prestashop.png ':size=100')](/plugins/prestashop.md)
 [![shopify](../img/platforms/shopify.png ':size=200x100')](/plugins/shopify.md)

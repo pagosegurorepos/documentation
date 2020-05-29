@@ -1,10 +1,12 @@
-# Descripcion del servicio
+# Webcheckout Pago Seguro
+
+## Descripcion del servicio
 
 Las integraciones mediante webcheckout permiten que un cliente seleccione cualquier cantidad de ítems tanto de productos como servicios desde su tienda ecommerce, al momento de realizar la compra es redireccionado a la pasarela de pagos de Pago Seguro en donde se deben diligenciar los datos de la información correspondiente a la transacción.
 
 La información enviada hacia el canal de pagos de nuestra pasarela es realizada mediante el método POST HTTP por el cual se reciben los datos mediante el request que se envié desde su tienda ecommerce.
 
-# Componentes del servicio
+## Componentes del servicio
 
 - Formulario de pago comercio:
 
@@ -22,7 +24,7 @@ La información enviada hacia el canal de pagos de nuestra pasarela es realizada
 
   Pagina de respuesta del comercio en la cual se debe identificar cualquier tipo de mensaje dependiendo si la transacción fue aprobada o rechazada.
 
-# Proceso del servicio
+## Proceso del servicio
 
 1. El primer procedimiento de compra identifica cuando el comprador accede a su página web ecommerce, elige cualquier cantidad de productos o servicios que desea comprar y selecciona el botón pagar.
 
@@ -36,7 +38,7 @@ La información enviada hacia el canal de pagos de nuestra pasarela es realizada
 
 6. Pago Seguro redirecciona al comprador a su página web ecommerce, esta pagina la establece el comercio como un url de respuesta.
 
-# Observaciones
+## Observaciones
 
 - Para realizar una integración mediante este servicio es necesario que cuente con personal de desarrollo el cual tenga conocimientos en lenguajes de programación, tales como:
   `PHP, Java, Python , .NET, Ruby, Javascript, etc.`
