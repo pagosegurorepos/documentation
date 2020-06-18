@@ -1,5 +1,5 @@
 <!-- _sidebar.md -->
-![logo](img/logo.png ':size=200x75')
+![logo](img/logo.png ':size=180x75')
 - [Pago Seguro](/)
 - Plugins / Modulos
   - [Iniciar](/plugins/start.md)
