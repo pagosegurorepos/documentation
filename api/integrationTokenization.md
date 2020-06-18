@@ -9,9 +9,9 @@ Pago Seguro te ofrece integración API rest para conectar sus serviciós de pago
 Para realizar conexiones API mediante carros de compra hacia la plataforma de Pago Seguro, se debe tener el comercio creado y habilitado en la modalidad del servicio carros de compra, con el fin de poder obtener el `Account ID` y el `Api key`.
 Dicha información se encuentra en el menú de herramientas, carros de compra tanto para el acceso de pruebas (sandbox) como para el acceso de producción.
 
-![install](../img/api/checkout/menu_access.png)
+![install](../img/api/tokenization/menu_access.png)
 
-![install](../img/api/checkout/menu_checkout.png)
+![install](../img/api/tokenization/menu_tokenization.png)
 
 Una vez obtenga el `Account ID` y `Api Key` para poder autenticarse en nuestro servicio y obtener el TOKEN que le permitirar ejecutar transacciones con el carro de compras
 
@@ -27,30 +27,30 @@ Una vez obtenga el `Account ID` y `Api Key` para poder autenticarse en nuestro s
 
 ### Diccionario de datos
 
-| CAMPO      |TIPO DE DATO |TAMAÑO|                      DESCRIPCIÓN                                              |         EJEMPLO         |
-|------------|------------ |:----:|-------------------------------------------------------------------------------|:-----------------------:|
-|key         |int          |      |Account ID, se encuentra en la plataforma de Pagos                             |123456789                |
-|txnid       |string       |  20  |Referencia de compra                                                           |SO0001                   |
-|amount      |decimal      |  13  |Monto total de la compra, se admiten decimales con separador decimal " . "     |90000.99                 |
-|productinfo |string       |  40  |Descripción general de la venta                                                |Producto Uno             |
-|firstname   |string       |  40  |Nombre completo del comprador incluido apellidos                               |Jhon Doe                 |
-|email       |string(email)|      |Email del comprador                                                            |jhondoe@compra.com       |
-|hash        |string       |      |Cadena hash en sha512 el cual concatena los valores (txnid, amount, productinfo, firstname, email)|[Ver Hash](/api/integrationCheckout.md?id=hash)|
-|quota       |int - between:1,36| |Cantidad de coutas                                                             |12                       |
-|brand       |string       |      |Franquicia de la tarjeta de crédito                                            |Mastercard               |
-|expiryMonth |int - between:1,12|2|Mes expiración de la tarjeta de crédito                                        |6                        |
-|expiryYear  |int          |   2  |Año expiración de la tarjeta de crédito                                        |21                       |
-|card        |string       |   2  |Número de tarjeta y código encriptados                                         |[Ver Encriptar Tarjeta](/api/integrationCheckout.md?id=encriptar-tarjeta)|
-|number      |int          |      |Número de la tarjeta de crédito                                                |4000000000000000         |
-|code        |int          | 3/4  |Código de seguridad de la tarjeta de crédito                                   |000                      |
-|typeIdentification|int - between:1,3| |Tipo de documento del pagador:<br>1 = Cédula Ciudadanía<br>2 = Cédula Extranjería<br>3 = Pasaporte| 1      |
-|billingNumberIdentifier|int|20   |Número de documento del pagador                                                |100000000                |
-|billingAddress|string     |      |Dirección del pagador                                                          |Calle luna # 10-99       |
-|billingNames|string       |      |Nombres del pagador                                                            |Jhon                     |
-|billingLastNames|string   |      |Apellidos del pagador                                                          |Doe                      |
-|billingEmail|string(email)|      |Email del pagador                                                              |jhondoe@pagador.com      |
-|callerPhoneNumber|int     | 7/10 |Teléfono ó Celular del pagador                                                 |3100000000               |
-|city        |string       |      |Ciudad de Residencia del pagador                                               |Bogotá                   |
+| CAMPO                   | TIPO DE DATO       | TAMAÑO | DESCRIPCIÓN                                                                                        |                                  EJEMPLO                                  |
+| ----------------------- | ------------------ | :----: | -------------------------------------------------------------------------------------------------- | :-----------------------------------------------------------------------: |
+| key                     | int                |        | Account ID, se encuentra en la plataforma de Pagos                                                 |                                 123456789                                 |
+| txnid                   | string             |   20   | Referencia de compra                                                                               |                                  SO0001                                   |
+| amount                  | decimal            |   13   | Monto total de la compra, se admiten decimales con separador decimal " . "                         |                                 90000.99                                  |
+| productinfo             | string             |   40   | Descripción general de la venta                                                                    |                               Producto Uno                                |
+| firstname               | string             |   40   | Nombre completo del comprador incluido apellidos                                                   |                                 Jhon Doe                                  |
+| email                   | string(email)      |        | Email del comprador                                                                                |                            jhondoe@compra.com                             |
+| hash                    | string             |        | Cadena hash en sha512 el cual concatena los valores (txnid, amount, productinfo, firstname, email) |              [Ver Hash](/api/integrationCheckout.md?id=hash)              |
+| quota                   | int - between:1,36 |        | Cantidad de coutas                                                                                 |                                    12                                     |
+| brand                   | string             |        | Franquicia de la tarjeta de crédito                                                                |                                Mastercard                                 |
+| expiryMonth             | int - between:1,12 |   2    | Mes expiración de la tarjeta de crédito                                                            |                                     6                                     |
+| expiryYear              | int                |   2    | Año expiración de la tarjeta de crédito                                                            |                                    21                                     |
+| card                    | string             |   2    | Número de tarjeta y código encriptados                                                             | [Ver Encriptar Tarjeta](/api/integrationCheckout.md?id=encriptar-tarjeta) |
+| number                  | int                |        | Número de la tarjeta de crédito                                                                    |                             4000000000000000                              |
+| code                    | int                |  3/4   | Código de seguridad de la tarjeta de crédito                                                       |                                    000                                    |
+| typeIdentification      | int - between:1,3  |        | Tipo de documento del pagador:<br>1 = Cédula Ciudadanía<br>2 = Cédula Extranjería<br>3 = Pasaporte |                                     1                                     |
+| billingNumberIdentifier | int                |   20   | Número de documento del pagador                                                                    |                                 100000000                                 |
+| billingAddress          | string             |        | Dirección del pagador                                                                              |                            Calle luna # 10-99                             |
+| billingNames            | string             |        | Nombres del pagador                                                                                |                                   Jhon                                    |
+| billingLastNames        | string             |        | Apellidos del pagador                                                                              |                                    Doe                                    |
+| billingEmail            | string(email)      |        | Email del pagador                                                                                  |                            jhondoe@pagador.com                            |
+| callerPhoneNumber       | int                |  7/10  | Teléfono ó Celular del pagador                                                                     |                                3100000000                                 |
+| city                    | string             |        | Ciudad de Residencia del pagador                                                                   |                                  Bogotá                                   |
 
 ### Hash
 
@@ -155,9 +155,9 @@ curl --location --request POST \
 
 ?> Respuesta
 
-| PROPIEDAD           | TIPO DE DATO | DESCRIPCIÓN                                                                             |
-|---------------------|:-------------|-----------------------------------------------------------------------------------------|
-|**data**             |`string`      |El "data" valor de la tarjeta encriptado                                                 |
+| PROPIEDAD | TIPO DE DATO | DESCRIPCIÓN                              |
+| --------- | :----------- | ---------------------------------------- |
+| **data**  | `string`     | El "data" valor de la tarjeta encriptado |
 
 ?> Ejemplo Encriptación Correcta
 ```javascript
@@ -274,14 +274,14 @@ curl --location --request POST \
 
 ?> Respuesta
 
-| PROPIEDAD               | TIPO DE DATO | DESCRIPCIÓN                                                                             |
-|-------------------------|:-------------:|----------------------------------------------------------------------------------------|
-|**data**                 |`object {}`   |El "data" representa si el resultado del llamado api fue correcto.                       |
-|data.**status**          |`string`      |Resultado de la transacción: Aprobado o Rechazado                                        |
-|data.**code**            |`string`      |Código de ejecución                                                                      |
-|data.**amount**          |`doble`       |Valor de la transacción                                                                  |
-|data.**transaction_code**|`int`         |Código de la transacción                                                                 |
-|data.**date**            |`string`      |Fecha y hora de la transacción                                                           |
+| PROPIEDAD                 | TIPO DE DATO | DESCRIPCIÓN                                                        |
+| ------------------------- | :----------: | ------------------------------------------------------------------ |
+| **data**                  | `object {}`  | El "data" representa si el resultado del llamado api fue correcto. |
+| data.**status**           |   `string`   | Resultado de la transacción: Aprobado o Rechazado                  |
+| data.**code**             |   `string`   | Código de ejecución                                                |
+| data.**amount**           |   `doble`    | Valor de la transacción                                            |
+| data.**transaction_code** |    `int`     | Código de la transacción                                           |
+| data.**date**             |   `string`   | Fecha y hora de la transacción                                     |
 
 ?> Ejemplo Encriptación Correcta
 ```javascript

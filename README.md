@@ -25,6 +25,6 @@ Este tipo de integración permite que tu cliente pueda seleccionar los artículo
 
 [Plugins](plugins/start.md ':id=btnnext')
 
-![logo](img/pagoseguro.png)
+![logo](img/logo.png ':size=300x100')
 
 > [Powered by docsify](https://docsify.js.org/#/)

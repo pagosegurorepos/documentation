@@ -1,6 +1,7 @@
 <!-- _sidebar.md -->
+![logo](../img/logo.png ':size=200x75')
 - [Pago Seguro](/)
-- Plugins / Modulos / Integraciones
+- Plugins / Modulos
   - [Iniciar](/plugins/start.md)
   - Magento
   - Odoo
