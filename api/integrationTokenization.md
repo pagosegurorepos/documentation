@@ -6,14 +6,14 @@ Pago Seguro te ofrece integración API rest para conectar sus serviciós de pago
 
 ## Configuración
 
-Para realizar conexiones API mediante carros de compra hacia la plataforma de Pago Seguro, se debe tener el comercio creado y habilitado en la modalidad del servicio carros de compra, con el fin de poder obtener el `Account ID` y el `Api key`.
-Dicha información se encuentra en el menú de herramientas, carros de compra tanto para el acceso de pruebas (sandbox) como para el acceso de producción.
+Para realizar conexiones API mediante pagos recurrentes hacia la plataforma de Pago Seguro, se debe tener el comercio creado y habilitado en la modalidad del servicio pagos recurrentes, con el fin de poder obtener el `Account ID` y el `Api key`.
+Dicha información se encuentra en el menú de herramientas, pagos recurrentes tanto para el acceso de pruebas (sandbox) como para el acceso de producción.
 
 ![install](../img/api/tokenization/menu_access.png)
 
 ![install](../img/api/tokenization/menu_tokenization.png)
 
-Una vez obtenga el `Account ID` y `Api Key` para poder autenticarse en nuestro servicio y obtener el TOKEN que le permitirar ejecutar transacciones con el carro de compras
+Una vez obtenga el `Account ID` y `Api Key` para poder autenticarse en nuestro servicio y obtener el TOKEN que le permitirar ejecutar transacciones para pagos recurrentes 
 
 ## Respuesta API
 
